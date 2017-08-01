@@ -20,3 +20,17 @@ curl -i POST -d '{"dateoffset":"10","name":"Jay","recordlist":["Jay Urbain, jay.
 
 
 {"name":"Jay","dateoffset":"10","deidlist":["Jay Urbain, jay.urbain@gmail.com, born December 6, 2156 is an elderly caucasian male suffering from illusions of grandeur and LBP.","He is married to Kimberly Urbain, who is much better looking.","Patient father, Francis Urbain has a history of CAD and DM.","Jay has been prescribed meloxicam, and venti americano.","He lives at 9050 N. Tennyson Dr., Disturbia, WI with his wife and golden retriever Mel.","You can reach him at 414-745-5102."]}
+
+
+
+
+
+
+
+
+
+
+
+
+curl -i POST -d '{"dateoffset":"10","name":"Jay","recordlist":["Jay Urbain, jay.urbain@gmail.com, born December 6, 2156 is an elderly caucasian male suffering from illusions of grandeur and LBP.", "He is married to Kimberly Urbain, who is much better looking.", "Patient father, Francis Urbain has a history of CAD and DM.", "Jay has been prescribed meloxicam, and venti americano.", "He lives at 9050 N. Tennyson Dr., Disturbia, WI with his wife and golden retriever Mel.", "You can reach him at 414-745-5102."]}' https://cis.ctsi.mcw.edu/deid/deidservice
+

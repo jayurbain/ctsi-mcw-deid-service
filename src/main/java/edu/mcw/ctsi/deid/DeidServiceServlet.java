@@ -1,9 +1,23 @@
 /**
- * Jay Urbain
- * jay.urbain@gmail.com
- * 3/19/2017
+    This file is part of "CTSI MCW Deidentification" for removing
+    protected health information from medical records.
+
+    Foobar is free software: you can redistribute it and/or modify
+    it under the terms of the GNU General Public License as published by
+    the Free Software Foundation, either version 3 of the License, or
+    (at your option) any later version.
+
+    "CTSI MCW Deidentification" is distributed in the hope that it will be useful,
+    but WITHOUT ANY WARRANTY; without even the implied warranty of
+    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+    GNU General Public License for more details.
+
+    You should have received a copy of the GNU General Public License
+    along with "CTSI MCW Deidentification."  If not, see <http://www.gnu.org/licenses/>.
+ */
+/**
+ * @author jayurbain, jay.urbain@gmail.com
  * 
- * NLP Service Servlet using cTakes
  */
 package edu.mcw.ctsi.deid;
 
@@ -34,9 +48,6 @@ import deidentification.DeidentificationRegex;
 import deidentification.MedicalRecordWrapper;
 import deidentification.NamedEntityRecognition;
 
-import deidentification.options.DeidOptions;
-import deidentification.options.cmdr.DeidOptionsJCmd;
-import deidentification.options.DeidOptionsParser;
 import util.SimpleIRUtilities;
 
 import org.apache.sling.commons.json.JSONObject;
