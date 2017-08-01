@@ -2,7 +2,7 @@
 
 ### NLP Software to deidentify protected health information from clinical notes.
 
-Jay Urbain, PhD
+Jay Urbain, PhD  
 jay.urbain@gmail.com
 
 Java Maven web service app. The application is accessible through a web page (index.jsp) or a JSON-based web service.
