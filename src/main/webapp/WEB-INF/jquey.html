@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+</head>
+<body>
+<script>
+$('#create').submit(function() { // catch the form's submit event
+	$('#created').html($(this).serialize())
+    /*
+    $.ajax({ // create an AJAX call...
+        data: $(this).serialize(), // get the form data
+        type: $(this).attr('method'), // GET or POST
+        url: $(this).attr('action'), // the file to call
+        success: function(response) { // on success..
+        $('#created').html(response); // update the DIV
+        }
+    */
+    });
+    return false; // cancel original event to prevent form submitting
+});
+</script>
+<form id=create method=POST action=create.php>
+<input type=text name=url>
+<input type="submit" value="Create" /> 
+
+<div id=created></div>
+
+
+
+</body>
+</html>

@@ -1,0 +1,28 @@
+curl -H 'Content-Type: application/json' -X POST -d '{"list":["Male patient with CAD","Female patient with COPD"]}' http://localhost:8080//annotationservice/json
+
+curl -X GET http://localhost:8080/service/annotationservice/json/Jay+is_elderly+and+has+diabetes+and+cancer
+
+curl -H 'Content-Type: application/json' -X POST -d '{"name":"Jay"}' http://localhost:8080/annotationservice/jsonlist
+
+
+
+curl -H 'Content-Type: application/json' -X PUT -d '{"name":"Jay"}' http://example.com/service
+
+curl -H 'Content-Type: application/json' -X POST -d '{"name":"Jay"}' http://localhost:8080/annotationservice/post
+
+
+curl -H "Content-Type: application/json" -X POST -d '{"username":"xyz","password":"xyz"}' http://localhost:8080/annotationservice
+
+
+curl -X GET http://localhost:8080/annotationservice?q=%7Brecordlist=%5B%22Jay%20is%20elderly%22,%22Treated%20for%20illusions%20of%20grandeur%22,%22Family%20history%20of%20CAD%22%5D%7D
+
+
+
+
+
+
+
+
+{ "annotationsList": [{"entityList":[{"begin":"7","end":"14","coveredText":"elderly","codingScheme":"SNOMEDCT","cui":"C0001792","tui":"T033","preferredText":"Elderly (population group)","typeIndex":"81","annotations":["207527008","158711007","207528003","158712000","269002005","139916008","271872005","32864002","105436006","49808004"]}]}, {"entityList":[{"begin":"12","end":"21","coveredText":"illusions","codingScheme":"SNOMEDCT","cui":"C0020903","tui":"T048","preferredText":"Illusions","typeIndex":"81","annotations":["5152006"]}]}, {"entityList":[{"begin":"0","end":"17","coveredText":"Family history of","codingScheme":"SNOMEDCT","cui":"C0241889","tui":"T033","preferredText":"Family history","typeIndex":"81","annotations":["137863003","137667000","160470003","276502004","57177007","266909004"]},{"begin":"0","end":"14","coveredText":"Family history","codingScheme":"SNOMEDCT","cui":"C0241889","tui":"T033","preferredText":"Family history","typeIndex":"81","annotations":["266909004","137863003","137667000","160470003","276502004","57177007"]},{"begin":"7","end":"17","coveredText":"history of","codingScheme":"SNOMEDCT","cui":"C0262926","tui":"T033","preferredText":"Medical History","typeIndex":"81","annotations":["392521001"]},{"begin":"7","end":"14","coveredText":"history","codingScheme":"SNOMEDCT","cui":"C0262926","tui":"T033","preferredText":"Medical History","typeIndex":"81","annotations":["392521001"]},{"begin":"18","end":"21","coveredText":"CAD","codingScheme":"SNOMEDCT","cui":"C0010068","tui":"T047","preferredText":"Coronary heart disease","typeIndex":"81","annotations":["41702007","53741008","155316000","53741008","41702007","194795001","266231003","155315001","194841001","266290000","194841001","41702007","8957000","414024009","53741008"]}]}
+
+{ "annotationsList": [{"entityList":[{"begin":"7","end":"14","coveredText":"elderly","codingScheme":"SNOMEDCT","cui":"C0001792","tui":"T033","preferredText":"Elderly (population group)","typeIndex":"81","annotations":["207527008","158711007","207528003","158712000","269002005","139916008","271872005","32864002","105436006","49808004"]}]}, {"entityList":[{"begin":"12","end":"21","coveredText":"illusions","codingScheme":"SNOMEDCT","cui":"C0020903","tui":"T048","preferredText":"Illusions","typeIndex":"81","annotations":["5152006"]}]}, {"entityList":[{"begin":"0","end":"17","coveredText":"Family history of","codingScheme":"SNOMEDCT","cui":"C0241889","tui":"T033","preferredText":"Family history","typeIndex":"81","annotations":["137863003","137667000","160470003","276502004","57177007","266909004"]},{"begin":"0","end":"14","coveredText":"Family history","codingScheme":"SNOMEDCT","cui":"C0241889","tui":"T033","preferredText":"Family history","typeIndex":"81","annotations":["266909004","137863003","137667000","160470003","276502004","57177007"]},{"begin":"7","end":"17","coveredText":"history of","codingScheme":"SNOMEDCT","cui":"C0262926","tui":"T033","preferredText":"Medical History","typeIndex":"81","annotations":["392521001"]},{"begin":"7","end":"14","coveredText":"history","codingScheme":"SNOMEDCT","cui":"C0262926","tui":"T033","preferredText":"Medical History","typeIndex":"81","annotations":["392521001"]},{"begin":"18","end":"21","coveredText":"CAD","codingScheme":"SNOMEDCT","cui":"C0010068","tui":"T047","preferredText":"Coronary heart disease","typeIndex":"81","annotations":["41702007","53741008","155316000","53741008","41702007","194795001","266231003","155315001","194841001","266290000","194841001","41702007","8957000","414024009","53741008"]}]}

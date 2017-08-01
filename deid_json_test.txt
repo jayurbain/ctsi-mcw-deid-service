@@ -1,0 +1,22 @@
+
+
+curl -i POST -d '{"dateoffset":"10","name":"Jay","recordlist":["Rambo Urbain is an elderly man."]}' http://localhost:8080/deidservice
+
+
+curl -i POST -d '{"name":"Jay","recordlist":["Rambo Urbain is an elderly man."]}' http://localhost:8080/deidservice
+
+curl -i POST -d '{"dateoffset":"10","recordlist":["Rambo Urbain is an elderly man."]}' http://localhost:8080/deidservice
+
+curl -i POST -d '{"recordlist":["Rambo Urbain is an elderly man."]}' http://localhost:8080/deidservice
+
+
+curl -i GET http://localhost:8080/deidservice?q=%7B%22dateoffset%22%3A%2210%22%2C%22name%22%3A%22Jay%22%2C%22recordlist%22%3A%5B%22Rambo+Urbain+is+an+elderly+man.%22%5D%7D
+
+
+
+curl -i POST -d '{"dateoffset":"10","name":"Jay","recordlist":["Jay Urbain, jay.urbain@gmail.com, born December 6, 2156 is an elderly caucasian male suffering from illusions of grandeur and LBP.", "He is married to Kimberly Urbain, who is much better looking.", "Patient father, Francis Urbain has a history of CAD and DM.", "Jay has been prescribed meloxicam, and venti americano.", "He lives at 9050 N. Tennyson Dr., Disturbia, WI with his wife and golden retriever Mel.", "You can reach him at 414-745-5102."]}' http://localhost:8080/deidservice
+
+{"name":"Jay","dateoffset":"10","deidlist":[" [PATIENT[PERSON]  [PERSON],  [xxx@xxx.xxx] , born  [12_16_2156]  is an elderly caucasian male suffering from illusions of grandeur and LBP.  ","He is married to [PERSON] [PERSON], who is much better looking.  ","Patient father, [PERSON] [PERSON] has a history of CAD and DM.  "," [PATIENT]  has been prescribed meloxicam, and venti americano.  ","He lives at  [xxxxx x. xxxxx]  Dr., Disturbia, WI with his wife and golden retriever [PERSON].  ","You can reach him at  [xxx_xxx_xxxx] .  "]}Jays-MacBook-Pro-2:~ jayurbain$ 
+
+
+{"name":"Jay","dateoffset":"10","deidlist":["Jay Urbain, jay.urbain@gmail.com, born December 6, 2156 is an elderly caucasian male suffering from illusions of grandeur and LBP.","He is married to Kimberly Urbain, who is much better looking.","Patient father, Francis Urbain has a history of CAD and DM.","Jay has been prescribed meloxicam, and venti americano.","He lives at 9050 N. Tennyson Dr., Disturbia, WI with his wife and golden retriever Mel.","You can reach him at 414-745-5102."]}
