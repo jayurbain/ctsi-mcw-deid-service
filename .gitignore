@@ -3,3 +3,5 @@
 .idea/
 
 ctsi-mcw-deid-service.iml
+
+META-INF/application.xml

@@ -5,9 +5,15 @@
 Jay Urbain, PhD  
 jay.urbain@gmail.com
 
+George Kowalski
+gkowalski@mcw.edu
+
 Java Maven web service app. The application is accessible through a web page (index.jsp) or a JSON-based web service.
 
 The web app and web service links provided below are for evaluation only and not for production use.
+
+### Requirements
+- APpche Tomcat 8.X ( Support for Servlet Spec 3 )
 
 ### Web-based user interface
 [https://cis.ctsi.mcw.edu/deid/](https://cis.ctsi.mcw.edu/deid/)

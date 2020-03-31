@@ -69,6 +69,9 @@ import deidentification.NamedEntityRecognition;
 
 import util.SimpleIRUtilities;
 
+import org.apache.logging.log4j.LogManager;
+import org.apache.logging.log4j.Logger;
+
 import org.apache.sling.commons.json.JSONObject;
 
 /*
@@ -76,6 +79,8 @@ import org.apache.sling.commons.json.JSONObject;
  */
 public class DeidServiceServlet extends HttpServlet {
 
+
+	private static final Logger logger = LogManager.getLogger("DeidServiceServlet");
 	private static final long serialVersionUID = 1L;
 //	private static final Logger LOGGER = Logger.getLogger(DeidServiceServlet.class);
 	private static final NumberFormat formatter = new DecimalFormat("#0.00000");
@@ -174,7 +179,7 @@ public class DeidServiceServlet extends HttpServlet {
         
         try {
             namedEntityRecognition = (NamedEntityRecognition) Class.forName(namedentityrecognitionclass).newInstance();
-            System.out.println("CLASS TO DEID WITH : " + namedentityrecognitionclass);
+			logger.debug("CLASS TO DEID WITH : " + namedentityrecognitionclass);
             deidentificationRegex = (DeidentificationRegex) Class.forName(regexdeidentificationclass).newInstance();
         } catch (InstantiationException | IllegalAccessException e1) {
             e1.printStackTrace();
@@ -226,7 +231,7 @@ public class DeidServiceServlet extends HttpServlet {
                 record.setDeIdText( namedEntityRecognition.performAnnotation( record.getRegexText() ) );
 				String elapsed = getFormatter()
 						.format((System.currentTimeMillis() - start) / 1000d);
-				System.out.println(record);
+				logger.debug(record.toString());
 				out.println(record.getDeIdText() + "<p/><i> Processed in " + elapsed + " secs</i>");
 			} catch (Exception e) {
 				throw new ServletException(e);
