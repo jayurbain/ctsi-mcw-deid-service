@@ -13,7 +13,31 @@ Java Maven web service app. The application is accessible through a web page (in
 The web app and web service links provided below are for evaluation only and not for production use.
 
 ### Requirements
-- APpche Tomcat 8.X ( Support for Servlet Spec 3 )
+- Apache Tomcat 8.X ( Support for Servlet Spec 3 )
+- Apache Maven ( https://maven.apache.org/ )
+
+
+### Installation
+
+Install Apache tomcat 8.*  from ( http://tomcat.apache.org/ )
+
+Next compile the code with :
+
+    mvn clean
+    mvn package
+
+This will produce a deployable war file under the target subdirectory. ( ctsi-mcw-deid-service/target/ctsi-mcw-deid-service.war )
+copy this file to your ~tomcat8/webapps/ directory.
+
+    cd ~tomcat/bin
+    ./startup.sh`
+
+Open your browser and go to the URL :
+
+    http://localhost:8080/ctsi-mcw-deid-service/
+
+
+After loading , which should ne automatic
 
 ### Web-based user interface
 [https://cis.ctsi.mcw.edu/deid/](https://cis.ctsi.mcw.edu/deid/)
