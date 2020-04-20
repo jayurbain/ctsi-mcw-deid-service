@@ -43,7 +43,7 @@ pipeline {
             }
             steps {
                    withEnv([
-                      "IMAGE_NAME=mcw-deid",
+                      "IMAGE_NAME=ctai-mcw-deid",
                        "BUILD_VERSION=" + (params.BUILD_VERSION ?: env.BUILD_VERSION)
                    ]) {
                         checkout scm
