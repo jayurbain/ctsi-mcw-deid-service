@@ -6,7 +6,7 @@ WORKDIR /tmp/
 RUN mvn clean install
 
 FROM tomcat:9.0-jre8-alpine
-COPY --from=MAVEN_TOOL_CHAIN /tmp/target/wizard*.war $CATALINA_HOME/webapps/wizard.war
+COPY --from=MAVEN_TOOL_CHAIN /tmp/target/ctsi-mcw-deid*.war $CATALINA_HOME/webapps/ctsi-mcw-deid-service.war
 
 COPY ./setup.sh /
 RUN bash /setup.sh
