@@ -12,7 +12,7 @@ pipeline {
         pollSCM('H/5 * * * *')
     }  
   environment {
-        PROJECT_NAME = "mcw-deid"
+        PROJECT_NAME = "ctai-mcw-deid"
         DOCKER_REPO_NAME = "ncatsctsa/ctai-mcw-deid"
     }
     stages {
